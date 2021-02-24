@@ -1,8 +1,8 @@
 <?php
-$linguaggio = 'PHP';
-$lunghezza = strlen($linguaggio);
+$testo = 'Benvenuti nella prima pagina creata con PHP.';
+$lunghezza = strlen($testo);
 $parola = $_GET['badword'];
-$sostituzioneParola = str_replace($parola, '***', $parola);
+$sostituzione = str_replace($parola,'***',$testo);
 ?>
 
 <!DOCTYPE html>
@@ -16,10 +16,11 @@ $sostituzioneParola = str_replace($parola, '***', $parola);
 <body>
 
     <h1>
-    Benvenuti nella prima pagina creata con <?= $linguaggio ?>. La lunghezza della variabile $linguaggio è di <?= $lunghezza ?> caratteri.
+    <?= $testo ?> La lunghezza della variabile $testo è di <?= $lunghezza ?> caratteri.
     </h1>
 
-    <p><?= $parola ?> questa parola è sosituita con <?= $sostituzioneParola ?> </p>
-
+    <h2>
+        <?= $sostituzione ?>
+    </h2>
 </body>
 </html>
