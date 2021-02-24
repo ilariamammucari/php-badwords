@@ -16,11 +16,12 @@ $sostituzione = str_replace($parola,'***',$testo);
 <body>
 
     <h1>
-    <?= $testo ?> La lunghezza della variabile $testo è di <?= $lunghezza ?> caratteri.
+        <?= $testo ?> La lunghezza della variabile $testo è di <?= $lunghezza ?> caratteri.
     </h1>
 
     <h2>
         <?= $sostituzione ?>
     </h2>
+
 </body>
 </html>
